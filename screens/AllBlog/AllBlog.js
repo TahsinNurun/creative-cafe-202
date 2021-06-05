@@ -12,7 +12,10 @@ export default function AllBlog() {
     useEffect( () => {
         fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=dc8b9b4980274e75b6867f68132b3990')
         .then(res => res.json())
-        .then(data => setTitle(data.articles))
+        .then(data => {
+            setTitle(data.articles);
+            console.log(data.articles)
+        })
     }, [])
 
     return (
