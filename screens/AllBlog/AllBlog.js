@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text,  ScrollView } from 'react-native'
+import { StyleSheet, Text,  ScrollView, Modal, View, Button } from 'react-native'
 import BlockCard from '../BlockCard/BlockCard';
 
+
 export default function AllBlog() {
+
+
 
     const [title, setTitle] = useState([]);
     
@@ -15,8 +18,9 @@ export default function AllBlog() {
     return (
         <ScrollView style={styles.container}>
             {
-                title.map(sinTitle => <BlockCard sinTitle={sinTitle}>name {sinTitle.source.name}</BlockCard>)
+                title.map(sinTitle => <BlockCard sinTitle={sinTitle} key={sinTitle.content}>name {sinTitle.source.name}</BlockCard>)
             }
+            
         </ScrollView>
     )
 }

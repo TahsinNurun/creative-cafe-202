@@ -2,7 +2,7 @@ import React from 'react';
 import { View, ImageBackground, Text, Button } from 'react-native';
 import { StyleSheet } from 'react-native';
 
-const Home = (props) => {
+const Home = ({navigation}) => {
     return (
         <View>
             <ImageBackground 
@@ -10,7 +10,8 @@ const Home = (props) => {
             style = {styles.image}>
                 <Text style={styles.title}>CREATIVE CAFE</Text>
                 <Button style={styles.button}
-                title="explore"/> 
+                    title="explore"
+                    onPress={() => navigation.navigate("AllBlog")}/> 
             </ImageBackground>
         </View>
     );
