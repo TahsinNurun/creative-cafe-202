@@ -3,8 +3,10 @@ import { Image, StyleSheet, Text, View, Button, Modal, ScrollView  } from 'react
 import BlogDetail from '../BlogDetail/BlogDetail';
 
 export default function BlockCard(props) {
-
+    console.log(props.sinTitle.title)
     const [modalOpen, setModalOpen] = useState(false);
+    const [detail,setDetail]=useState([]);
+    
 
     return (
         <View style={styles.container}>
