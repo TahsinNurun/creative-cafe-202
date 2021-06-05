@@ -10,7 +10,8 @@ export default function AllBlog() {
     const [title, setTitle] = useState([]);
     
     useEffect( () => {
-        fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=dc8b9b4980274e75b6867f68132b3990')
+        const url=`https://newsapi.org/v2/top-headlines?country=us&apiKey=dc8b9b4980274e75b6867f68132b3990`
+        fetch(url)
         .then(res => res.json())
         .then(data => {
             setTitle(data.articles);
