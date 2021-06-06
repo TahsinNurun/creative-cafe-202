@@ -10,7 +10,7 @@ export default function AllBlog() {
     const [title, setTitle] = useState([]);
     
     useEffect( () => {
-        // This is news api for loded datd
+        // This is news api for loded data
         const url=`https://newsapi.org/v2/top-headlines?country=us&apiKey=dc8b9b4980274e75b6867f68132b3990`
         fetch(url)
         .then(res => res.json())
@@ -24,11 +24,11 @@ export default function AllBlog() {
         // Data passing with BlockCard component
         <ScrollView style={styles.container}>
             
-            {
-                title.map(sinTitle => <BlockCard sinTitle={sinTitle} key={sinTitle.content}>name {sinTitle.source.name}</BlockCard>)
-            }
-            
-        </ScrollView>
+        {
+            title.map(sinTitle => <BlockCard sinTitle={sinTitle} key={sinTitle.content}>name {sinTitle.source.name}</BlockCard>)
+        }
+        
+    </ScrollView>
     )
 }
 

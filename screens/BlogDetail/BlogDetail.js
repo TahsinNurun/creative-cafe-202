@@ -16,7 +16,7 @@ const BlogDetail = (props) => {
     }, [])
 
     return (
-        //Display Block details for component 
+        //Display Block details for componene
         <SafeAreaView>
             <ScrollView>
             {/* <Image source={require('')}/> */}

@@ -1,4 +1,4 @@
-// Home page
+// Home component
 import React from 'react';
 import { View, ImageBackground, Text, Button } from 'react-native';
 import { StyleSheet } from 'react-native';
@@ -7,7 +7,7 @@ const Home = ({navigation}) => {
     return (
         <View>
             <ImageBackground 
-            source = {require('../../assets/Images/bg.png')} // image for our assets
+            source = {require('../../assets/Images/bg.png')} // image for our sourch
             style = {styles.image}>
                 <Text style={styles.title}>CREATIVE CAFE</Text>
                 <Button style={styles.button}
