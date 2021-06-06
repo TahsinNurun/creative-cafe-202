@@ -11,6 +11,7 @@ export default function AllBlog() {
     
     useEffect( () => {
         // This is news api for loded data
+        
         const url=`https://newsapi.org/v2/top-headlines?country=us&apiKey=dc8b9b4980274e75b6867f68132b3990`
         fetch(url)
         .then(res => res.json())
