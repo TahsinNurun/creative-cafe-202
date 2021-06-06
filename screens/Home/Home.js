@@ -6,7 +6,7 @@ const Home = ({navigation}) => {
     return (
         <View>
             <ImageBackground 
-            source = {require('../../assets/Images/bg.png')} 
+            source = {require('../../assets/Images/bg.png')} // image for our assets
             style = {styles.image}>
                 <Text style={styles.title}>CREATIVE CAFE</Text>
                 <Button style={styles.button}
