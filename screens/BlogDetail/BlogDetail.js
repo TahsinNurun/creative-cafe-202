@@ -16,9 +16,11 @@ const BlogDetail = (props) => {
     }, [])
 
     return (
+        //Display Block details for componene
         <SafeAreaView>
             <ScrollView>
             {/* <Image source={require('')}/> */}
+            
                <View style={styles.contentContainer}>
                   <Text style={styles.title} >Apple needs to tailor iOS 15 to make the iPhone 12 Pro more pro{title.description}</Text>
                   <Text style={styles.content}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iure debitis minus temporibus dolore qui non. Voluptatibus ipsam possimus, voluptate qui illo quis sit saepe? Illum explicabo est at repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iure debitis minus temporibus dolore qui non. Voluptatibus ipsam possimus, voluptate qui illo quis sit saepe? Illum explicabo est at repudiandae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iure debitis minus temporibus dolore qui non. Voluptatibus ipsam possimus, voluptate qui illo quis sit saepe? Illum explicabo est at repudiandae?Dolor iure debitis minus temporibus dolore qui non. Voluptatibus ipsam possimus, voluptate qui illo quis sit saepe? Illum explicabo est at repudiandae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iure debitis minus temporibus dolore qui non. Voluptatibus ipsam possimus, voluptate qui illo quis sit saepe? Illum explicabo est at repudiandae?</Text>
